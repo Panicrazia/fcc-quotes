@@ -1,0 +1,145 @@
+:root {
+  --primary: #8C22D6;
+  --secondary: #69E41B;
+  --dark: #431066;
+  --darker: #2F0C48;
+  --buttonPressed: #3C0E5B;
+  --light: #b277dd;
+  --secondarydark: #53B515;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--secondary)
+}
+
+#root {
+  margin: 0, auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+}
+
+#quote-box {
+  background-color: var(--darker);
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#quote-container {
+  background-color: var(--dark);
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#text {
+  text-align: center;
+  padding-top: 1rem;
+  display:inline-block;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#author {
+  text-align: right;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  /*
+  margin-bottom: 0.5rem;
+  */
+}
+
+#buttons {
+  height: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--secondary);
+}
+
+#tweet-quote {
+  float: left;
+  color: inherit;
+  background-color: var(--dark);
+  height: 2rem;
+  width: 2rem;
+  border-radius: inherit;
+  /*  */
+  padding: .2rem .5rem;
+}
+
+#tweet-quote:hover {
+  color: var(--secondarydark);
+  background-color: var(--buttonPressed);
+}
+
+#new-quote {
+  color: inherit;
+  background-color: var(--dark);
+  float: right;
+  padding: 0 0.5rem;
+  height: 100%;
+  border-radius: inherit;
+  font-weight: inherit;
+  border: none;
+}
+
+#new-quote:hover {
+  color: var(--secondarydark);
+  background-color: var(--buttonPressed);
+}
